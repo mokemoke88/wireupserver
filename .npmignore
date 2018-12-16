@@ -1,0 +1,7 @@
+.prettierrc
+.gitignore
+tsconfig.json
+tsconfig.lint.json
+tsconfig.spec.json
+tslint.json
+src/

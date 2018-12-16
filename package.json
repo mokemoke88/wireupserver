@@ -1,0 +1,52 @@
+{
+  "name": "@seekers/wireupserver",
+  "version": "0.0.1",
+  "description": "graceful shutdown server",
+  "main": "dist/wireup.js",
+  "scripts": {
+    "prepare": "rimraf ./dist && tsc --project tsconfig.json",
+    "compile": "rimraf ./dist && tsc --project tsconfig.json",
+    "test": "jest",
+    "lint": "tslint --project tsconfig.spec.json",
+    "lint:fix": "tslint --project tsconfig.spec.json --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mokemoke88/wireupserver.git"
+  },
+  "keywords": [],
+  "author": "katsuhiko shibata",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^23.3.10",
+    "@types/node": "^10.12.15",
+    "jest": "^23.6.0",
+    "prettier": "^1.15.3",
+    "rimraf": "^2.6.2",
+    "ts-jest": "^23.10.5",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.2.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.spec.json"
+      }
+    },
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "testMatch": [
+      "**/src/**/*.spec.ts?(x)",
+      "**/src/**/*.test.ts?(x)"
+    ]
+  },
+  "dependencies": {}
+}
